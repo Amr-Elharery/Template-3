@@ -289,7 +289,7 @@ header .container .nav > li .mega-menu .links li::before{
     transition: var(--main-transition);
 }
 header .container .nav > li .mega-menu .links li:hover::before{
-    width: 100%;
+   width: 100%;
 }
 header .container .nav > li .mega-menu .links li a {
     color: var(--main-color);
@@ -338,9 +338,9 @@ header .container .nav > li:last-child:hover .mega-menu{
     }
 }
 .landing .text h1{
-    font-size: 40px;
-    margin: 0;
-    letter-spacing: -2px;
+     font-size: 40px;
+     margin: 0;
+     letter-spacing: -2px;
 }
 @media (max-width: 767px){
     .landing .text h1{
@@ -348,12 +348,12 @@ header .container .nav > li:last-child:hover .mega-menu{
     }
 }
 .landing .text p{
-    font-size: 24px;
-    line-height: 1.7;
-    margin: 5px 0 0;
-    color: #666;
-    max-width: 500px;
-}
+      font-size: 24px;
+      line-height: 1.7;
+      margin: 5px 0 0;
+      color: #666;
+      max-width: 500px;
+ }
 @media (max-width: 991px){
     .landing .text p{
         margin: 10px auto;
@@ -385,8 +385,8 @@ header .container .nav > li:last-child:hover .mega-menu{
     color: var(--main-color);
     animation: bouncing 1.5s infinite;
 }.landing .go-down i:hover{
-     color: var(--main-color-alt);
- }
+    color: var(--main-color-alt);
+}
 /*End Landing*/
 /*Start Article*/
 .articles{
