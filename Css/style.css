@@ -289,7 +289,7 @@ header .container .nav > li .mega-menu .links li::before{
     transition: var(--main-transition);
 }
 header .container .nav > li .mega-menu .links li:hover::before{
-   width: 100%;
+    width: 100%;
 }
 header .container .nav > li .mega-menu .links li a {
     color: var(--main-color);
@@ -338,9 +338,9 @@ header .container .nav > li:last-child:hover .mega-menu{
     }
 }
 .landing .text h1{
-     font-size: 40px;
-     margin: 0;
-     letter-spacing: -2px;
+    font-size: 40px;
+    margin: 0;
+    letter-spacing: -2px;
 }
 @media (max-width: 767px){
     .landing .text h1{
@@ -348,12 +348,12 @@ header .container .nav > li:last-child:hover .mega-menu{
     }
 }
 .landing .text p{
-      font-size: 24px;
-      line-height: 1.7;
-      margin: 5px 0 0;
-      color: #666;
-      max-width: 500px;
- }
+    font-size: 24px;
+    line-height: 1.7;
+    margin: 5px 0 0;
+    color: #666;
+    max-width: 500px;
+}
 @media (max-width: 991px){
     .landing .text p{
         margin: 10px auto;
@@ -385,8 +385,8 @@ header .container .nav > li:last-child:hover .mega-menu{
     color: var(--main-color);
     animation: bouncing 1.5s infinite;
 }.landing .go-down i:hover{
-    color: var(--main-color-alt);
-}
+     color: var(--main-color-alt);
+ }
 /*End Landing*/
 /*Start Article*/
 .articles{
@@ -548,7 +548,7 @@ header .container .nav > li:last-child:hover .mega-menu{
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
 }
 .features .card .image-holder::after{
@@ -610,3 +610,135 @@ header .container .nav > li:last-child:hover .mega-menu{
     color: #FFF;
 }
 /*End Features*/
+/*Start Testimonials*/
+.testimonials{
+    background-color: var(--section-background);
+    padding: var(--main-padding-top) 0;
+}
+.testimonials .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+.testimonials .card{
+    position: relative;
+    background-color: #FFF;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+.testimonials .card img{
+    border-radius: 50%;
+    background-color: var(--section-background);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    border: 10px solid var(--section-background);
+}
+.testimonials .card .title{
+    color: #777;
+    margin-bottom: 10px;
+    display: block;
+}
+.testimonials .card .rate i.filled{
+    color: #ffc107;
+}
+.testimonials .card p{
+    line-height: 1.5;
+    color: #777;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+/*End Testimonials*/
+/*Start Team*/
+.team{
+    padding: var(--main-padding-top) 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+.team .box{
+    position: relative;
+}
+.team .box::before, .team .box::after{
+    content: '';
+    background-color: #f3f3f3;
+    position: absolute;
+    right:0;
+    top: 0;
+    height: 100%;
+    border-radius: 10px;
+}
+.team .box::before{
+    z-index: -2;
+    width: calc(100% - 60px);
+}
+.team .box::after{
+    z-index: -1;
+    background-color: #e4e4e4;
+    width: 0;
+    transition: var(--main-transition);
+}
+.team .box:hover::after{
+    width: calc(100% - 60px);
+}
+.team .box .data{
+    padding: 60px 0 0 0;
+    display: flex;
+    align-items: center;
+}
+.team .box .data .icons {
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.team .box .data .icons a{
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--main-transition);
+}
+.team .data .icons i{
+    color: #777;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.team .box .data .icons a:hover i:not(.fa-youtube){
+    color: var(--main-color);
+}
+.team .box .data .icons a:hover .fa-youtube{
+    color: #f00;
+}
+.team .box .data img{
+    transition: var(--main-transition);
+    width: calc(100% - 60px);
+    border-radius: 10px;
+
+}
+.team .box:hover img{
+    filter: grayscale(100%);
+}
+.team .box .text{
+    padding-left: 80px;
+}
+.team .box .text h3{
+    color:var(--main-color);
+    transition: var(--main-transition);
+    margin-bottom: 0;
+    font-size: 22px;
+}
+.team .box:hover h3{
+    color:#777;
+}
+.team .box .text p{
+    margin:10px 0 25px 0 ;
+}
+/*End Team*/
